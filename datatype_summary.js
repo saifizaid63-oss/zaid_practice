@@ -34,5 +34,43 @@ console.log(id === anotherId)  // false
        // console.log('hello world'  );
     }
         
-    console.log(typeof heros)  
+    console.log(typeof heros)
+
+
+
+
+    // +++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+    // stack vs heap memory there are two types of memory in js
+       
+    // steck memory : primitive data types are stored in stack memory
+    // heap memory : non-primitive data types are stored in heap memory
+
+    let myInstaname = 'zaidxsaifi'   // stored in stack memory 
+
+    let anotherName = myInstaname   
+    anotherName = "saifizaid"         // changing anotherName does not change myInstaname
+
+    console.log(myInstaname);
+    console.log(anotherName);
+
+
+    let userOne = {
+        email: "user@google.com",
+        upi : "user@upi"
+    }
+
+    let userTwo = userOne
+    userTwo.email = "zaid@gmail.com"
+
+    console.log(userOne.email );
+    console.log(userTwo.email  );
+    
+
+    
+    
+    
+    
+    
     
